@@ -113,3 +113,7 @@ print("The string str16 starts with 'he' :",str16.startswith('he'))
 # 20 swapcase()
 str17="Hello my NAme is !!! H@Ari^^a"
 print("The string str17 in swapcase is :",str17.swapcase())
+
+#21 strip()
+str18="   Silvery spoon "
+print("The string str18 after strip is :"+str18.strip())
