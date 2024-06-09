@@ -30,6 +30,14 @@ print(len(str4))
 print(str4.center(50))
 print(len(str.center(50)))
 
+
+'''
+Since, in #7 at 4th line i have written    print(len(str.center(50)))   but i am operating with str4 still i am not getting any error because in vs code i have written all methods in a single file where i already had defined a striing named str.
+So now when i run   print(len(str.center(50)))   then i am simply considering str with center gap of 50 spaces.
+
+{{{{{{{{{{ IT DOES NOT MEAN THAT THE str IS CHANGED TO SUCH A STRING WHICH HAS CENTER SPACE GAP OF 50 SPACES RATHER IT SIMPLY MEANS THAT IF I WILL ASSIGN THAT METHOD TO SOME NEW STRING THEN IT WILL JUST COPY SUCH STRING TO THE NEW STRING BUT str4 WON'T BE CHANGED AT ALL AS STRINGS ARE IMMUTABLE.
+'''
+
 # 8 count()
 str5="!!!Harry!! harry* Harry $!2harry^&"
 print("The value of count is",str5.count("harry"))
@@ -39,7 +47,7 @@ str6="Welcome to the console!!@"
 str_6=str6.endswith("!@")
 print(str_6)
 
-str__6=str6.endswith("to",4,12) # ----> It will check from 4th index to 
+str__6=str6.endswith("to",4,10) # ----> It will check from 4th index to 
 print(str__6)                    # (10-1)=9th index whether it ends with 
                                 # "to" or not if yes then True else False
 
