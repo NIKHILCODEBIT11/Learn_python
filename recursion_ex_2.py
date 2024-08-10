@@ -1,5 +1,5 @@
 # FIBONACCI SERIES :-
-
+l=[]
 def fibo(n):
     if n==1:
         return 0
@@ -11,5 +11,8 @@ n=int(input("Enter number of terms required in fibonacci : "))
 m2=fibo(n)
 a2='in'
 for i in range(1,n+1):
-    print(fibo(i))
+    # print(fibo(i))
+    a_i=fibo(i)
+    l.append(a_i)
+print(l)
 print(f'The last term {a2} fibonacci series for {n} is',m2)
